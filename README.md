@@ -24,13 +24,13 @@ python synthesis.py --data_path=./data/sbs --generator_name=arc_pavement -n_samp
 
 **Step 2**: Build the training dataset:
 ```bash 
-python dataset_tool.py --source=./data/sbs/arc_pavement --dest=./data/train/arc_pavement_300k.zip
+python stylegan/dataset_tool.py --source=./data/sbs/arc_pavement --dest=./data/train/arc_pavement_300k.zip
 ```
 A dataset for training StyleGAN will be generated at the location `./data/train/arc_pavement_300k.zip`.
 
 ## Train a Differentiable Proxy
 If you want to train your own data, please make sure you have a json file that stores parameters for each image, 
-and use `dataset_tool.py` (Step 2) to build a dataset for training. We include an example of such json file in `./data/example`. 
+and use `stylegan/dataset_tool.py` (Step 2) to build a dataset for training. We include an example of such json file in `./data/example`. 
 
 Please check `cmd.py` for the training command. Generally, there are two versions of networks: with GAN loss and without GAN loss, which is specified by an option `--no_gan`. The training log and intermediate results can be found in  `training-runs` subfolder. 
 In order to run the code, please put the pretrained VGG19 model into `./pretrained` folder. The VGG19 model can be downloaded from here:  https://drive.google.com/file/d/13TTR61wQ3OVJUKk6P39HegoWBQ-_MUQq/view?usp=sharing.
