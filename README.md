@@ -9,7 +9,7 @@ In SIGGRAPH '22 Conference Processing, Vancouver, BC, Canada, 2022. [[Project pa
 ## Requirements
 See requirements for StyleGAN3: https://github.com/NVlabs/stylegan3.
 
-## List of Change for StyleGAN
+## List of Changes for StyleGAN
 We modify the training setup by making the inputs as normalized parameters only, and implement our customized loss functions in `loss.py`.
 Training code of StyleGAN is included in `stylegan` folder. (Updated on 12/10/2022)
 
