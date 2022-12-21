@@ -18,7 +18,7 @@ All commands are listed in `cmd.py` for convenience.
 
 **Step 1**: Please specify a correct path `sat_dir` to substance automatic toolkit in `synthesis.py` and then synthesize training data:
 ```bash 
-python synthesis.py --data_path=./data/sbs --generator_name=arc_pavement -n_samples=307200
+python synthesis.py --data_path=./data/sbs --generator_name=arc_pavement --n_samples=307200
 ```
 307200 images will be synthesized into a folder `./data/sbs/arc_pavement`
 
